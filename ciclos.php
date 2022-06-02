@@ -33,8 +33,15 @@ $tienda = array(
     'Expresso' => 6
 );
 
-foreach ($tienda as $key => $value) {
-    echo "El cafe {$key} vale {$value} dolares \n";
+foreach ($tienda as $cafe => $precio) {
+    echo "El cafe {$cafe} vale {$precio} dolares \n";
+}
+
+#buscamos e imprimimos el valor solicitado
+foreach ($tienda as $cafe => $precio) {
+    if ($cafe == 'Latte') {
+        echo "El cafe {$cafe} vale {$precio} dolares \n";
+    }
 }
 
 ?>
