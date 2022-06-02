@@ -4,10 +4,10 @@
 $asientos_disponibles = 0;
 $es_familia = false;
 
-if($asientos_disponibles >0 ){
+if($asientos_disponibles >0){
     echo "puedes ver la pelicula";
 }
-elseif ($es_familia == true) {
+elseif($es_familia == true){
     echo "pasale familia";
 }
 else{
@@ -18,7 +18,7 @@ else{
 
 $variable = 5;
 
- switch ($variable) {
+ switch($variable){
     case 1:
         echo "el numero es el 1";
         break;
@@ -27,8 +27,7 @@ $variable = 5;
         break;
     case 3:
         echo "el numero es el 3";
-        break;
-     
+        break;     
     default:
         echo "el numero no existe";
         break;
