@@ -1,0 +1,34 @@
+El autoload contiene:
+
+    files.- Cargar archivos con helpers.
+    classmap.- Cargamos carpetas con algunas clases.
+        psr-0.- Se tiene que poner todas las rutas de las carpetas.
+        psr-4(recomendado).- Se hace enfásis solo a la carpeta principal.
+
+
+Siempre que usemos un archivo como index.php necesitamos invicar el archivo de autocarga.
+
+file: index.php 
+    <?php
+    
+    require__DIR__ . '/vendor/autoload.php';
+
+
+Comandos principales de composer
+
+//Si tienes el paquete agregado a tu composer.json
+composer install
+
+//si no lo tienes configurado en tu json
+composer require phpunit/phpunit
+
+//Si deseas removerlo
+composer remove phpunit/phpunit
+
+//para agregar composer a tu proyecto
+composer dump
+
+La diferencia entre self-update y update es:
+
+self-update: Actualiza a composer, al manejador de dependencias
+update: Actualiza las dependencias de nuestros proyectos
