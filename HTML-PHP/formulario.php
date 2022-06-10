@@ -8,7 +8,7 @@
 </head>
 <body>
     <p>Formulario GET</p>
-    <form action="server.php" method="get">
+    <form action="server-data.php" method="get">
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" id="nombre">
 
